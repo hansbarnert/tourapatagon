@@ -1,0 +1,329 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; /* Adjust the gap as needed */
+    padding: 2rem 4rem 4rem 4rem;
+    /* background-color: black; */
+    min-height: 50rem;
+    background-color: #E4F6F5;
+}
+
+.grid-container a{
+  bottom: 90%;
+  color: white;
+  text-decoration: none;
+}
+
+.desktop h1{
+  background-color: #E4F6F5;
+  margin: 0;
+  padding-top: 3rem;
+  text-align: start;
+  padding-left: 5%;
+  font-weight: 600;
+}
+
+.desktop h1 span{
+  font-size: 3.5rem;
+  padding-left: 0.5rem;
+}
+
+.img-1, .img-2, .img-3, .img-4{
+    background-position: center;
+    background-size: 100% auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.item {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    /* Additional styling for your items */
+}
+
+.img-1{
+    grid-column: span 2;
+    background-image: url(/full-day.png);
+}
+
+.img-2 {
+    grid-row: span 2; /* This spans two rows */
+    background-image: url(/base-torres.png);
+    background-size: auto 100%;
+}
+
+
+.img-3{
+    background-image: url(/glaciar-grey.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.img-4{
+    background-image: url(/cueva-milodon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+}
+
+.img-1::before,
+.img-2::before,
+.img-3::before,
+.img-4::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); /* Adjust alpha for darkness */
+    border-radius: 10px;
+}
+
+.img-1 a{
+  position: absolute;
+  top: 80% !important;
+  left: 7%;
+  transform: translateX(-50%) !important;
+  color: white; /* Set label text color */
+  font-size: 1.5rem; /* Set label font size */
+}
+
+.img-2 a{
+  position: absolute;
+  top: 90% !important;
+  left: 17.5%;
+  transform: translateX(-50%) !important;
+  color: white; /* Set label text color */
+  font-size: 1.5rem; /* Set label font size */
+}
+
+.img-3 a{
+  position: absolute;
+  top: 80% !important;
+  left: 18%;
+  transform: translateX(-50%) !important;
+  color: white; /* Set label text color */
+  font-size: 1.5rem; /* Set label font size */
+}
+
+.img-4 a{
+  position: absolute;
+  top: 80% !important;
+  left: 23.5%;
+  transform: translateX(-50%) !important;
+  color: white; /* Set label text color */
+  font-size: 1.5rem; /* Set label font size */
+}
+
+@media (max-width: 1600px){
+  .grid-container a{
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .img-1 a{
+    left: 11%;
+  }
+
+  .img-2 a{
+    left: 30%;
+  }
+
+  .img-3 a{
+    left: 30%;
+  }
+
+  .img-4 a{
+    left: 40%;
+  }
+}
+
+.img-1 a:hover,
+.img-2 a:hover,
+.img-3 a:hover,
+.img-4 a:hover{
+  color: #FF9800;
+}
+.carousel-mobile {
+  width: 100%;
+  position: relative;
+  padding: 2.5rem;
+  background-color: #E4F6F5;
+}
+
+.carousel-mobile .carousel-inner {
+  text-align: center;
+}
+
+.carousel-mobile .item-c {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: #E4F6F5;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+  min-height: 35vh;
+  color: white; /* Set text color to white */
+  font-size: 2rem;
+  width: 100%;
+  padding-bottom: 45%;
+  position: relative;
+}
+
+.carousel-mobile .item-c div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-mobile .carousel-indicators {
+  position: absolute;
+  bottom: 10px; /* Adjust the distance from the bottom as needed */
+  left: 35%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.carousel-mobile .carousel-control-prev,
+.carousel-mobile .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  font-size: 1.5rem;
+  background-color: #317571;
+  border: none;
+  border-radius: 5px;
+}
+
+.carousel-mobile .carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-mobile .carousel-control-next {
+  right: 10px;
+}
+
+/* Responsive adjustments based on screen width */
+
+.carousel-mobile .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  background-color: #317571;
+  border: 1px solid #317571;
+  margin: 0 3px;
+}
+
+.carousel-mobile .carousel-indicators .active {
+  background-color: #FF9800;
+}
+
+/* Background Images and Darkness Overlay */
+.carousel-mobile .img-1-c::before,
+.carousel-mobile .img-2-c::before,
+.carousel-mobile .img-3-c::before,
+.carousel-mobile .img-4-c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust alpha for darkness */
+  border-radius: 10px;
+}
+
+/* Background Images for Carousel Items */
+.img-1-c {
+  background-image: url(/full-day.png);
+  background-size: 100% 100%;
+}
+
+.img-2-c {
+  background-image: url(/base-torres.png);
+  background-size: 100% 100%;
+}
+
+.img-3-c {
+  background-image: url(/glaciar-grey.png);
+  background-size: 100% 100%;
+}
+
+.img-4-c {
+  background-image: url(/cueva-milodon.png);
+  background-size: 100% 100%;
+}
+
+.carousel-label {
+  position: absolute;
+  top: 75% !important;
+  left: 50%;
+  transform: translateX(-50%) !important;
+  color: white; /* Set label text color */
+  font-size: 2rem; /* Set label font size */
+}
+
+.carousel-label a:hover {
+  color: #FF9800;
+}
+
+.carousel-label a{
+  text-decoration: none;
+  color: white;
+}
+
+.carousel-mobile h1{
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+  align-items: end;
+}
+
+.carousel-mobile span{
+  color: #FF9800;
+  padding-left: 2%;
+  padding-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+  .carousel-mobile .item-c {
+    width: 90%;
+  }
+  .carousel-label{
+    font-size: 1.7rem;
+    width: 20rem;
+  }
+  .carousel-mobile h1 span{
+    font-size: 3rem !important;
+    text-align: end;
+    align-items: end;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-mobile .item-c {
+    width: 95%;
+  }
+  .carousel-mobile h1 span{
+    font-size: 2rem !important;
+    text-align: end;
+    align-items: end;
+  }
+
+  .carousel-label{
+    top: 72% !important;
+  }
+
+  .carousel-label a{
+    font-size: 1.4rem;
+  }
+}

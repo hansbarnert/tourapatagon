@@ -1,0 +1,30 @@
+.tours-name {
+  color: #FFF;
+  font-family: PT Sans, 'sans-serif';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tours-container {
+  background-color: #E4F6F5;
+  min-height: 95%;
+}
+
+.tours-container h1 {
+  color: #000;
+  font-family: PT Sans, 'sans-serif';
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.tours-container span {
+color: #FF9800;
+font-family: PT Sans, 'sans-serif';
+font-size: 3rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal; 
+}

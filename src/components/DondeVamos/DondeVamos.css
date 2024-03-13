@@ -1,0 +1,20 @@
+.donde-vamos-image {
+    background-color: #317571;
+    background-size: cover;
+    background-position: center;
+}
+.custom-border {
+  border: 2px solid rgba(0, 0, 0, 0.2); /* Adjust the border width and color as needed */
+}
+
+.donde-vamos-container {
+  margin-bottom: 0 !important;
+}
+
+.donde-vamos-text {
+    color: #FFFFFF;
+    font-family: PT Sans, 'sans-serif';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}

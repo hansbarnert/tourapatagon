@@ -1,0 +1,19 @@
+.footer {
+    background-color: #317571;
+    color: white; /* Optional: change text color for better contrast */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    margin: none !important;
+}
+
+.col-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.list-unstyled{
+    padding: 0 !important;
+}

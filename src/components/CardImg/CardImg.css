@@ -1,0 +1,23 @@
+.custom-border {
+  border: none !important;
+}
+
+.img-custom-text {
+  color: #FFF;
+  font-family: PT Sans, 'sans-serif';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.img-custom-text:hover{
+  color: #FF9800;
+}
+
+.dim-image {
+  filter: brightness(70%); /* Adjust the percentage to control the brightness */
+  height: 25rem;      /* Ensures the image takes the full width */
+  width: 50rem;
+  object-fit: cover; /* Cover the container without distorting the image */
+  /* Add object-position if needed, e.g., object-position: center; */
+}
